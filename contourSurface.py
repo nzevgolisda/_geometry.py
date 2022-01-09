@@ -12,7 +12,7 @@ x, y = np.meshgrid(t, s)
 z = f(x, y)
 def plotter(E, A):
     #plt.contour(x, y, z) # points of surface and z=0 plane
-    #plt.contour(x, y, z, 15) # more levels
+    plt.contour(x, y, z, 15) # more levels
     # Axes
     fig = plt.figure('Plot and Contour plot')
     ax = fig.add_subplot(111, projection='3d')
