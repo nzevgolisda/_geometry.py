@@ -17,7 +17,7 @@ def plotter(E, A):
     fig = plt.figure('Plot and Contour plot')
     ax = fig.add_subplot(111, projection='3d')
     #ax = fig.gca(projection='3d')
-    h = ax.plot_surface(x, y, z, cmap = cm.viridis, edgecolor = 'c') #viridis, cubehelix, Dark2, flag, Accent, hsv
+    h = ax.plot_surface(x, y, z, cmap = cm.PiYG, edgecolor = 'k') #gist_stern, tab20c, PuBuGn, tab20, terrain, gnuplot, viridis, cubehelix, Dark2, flag, Accent, hsv
     fig.colorbar(h)
     ax.set_xlabel('X', fontweight = 'bold', fontsize = 14)
     ax.set_ylabel('Y', fontweight = 'bold', fontsize = 14)
