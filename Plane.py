@@ -12,8 +12,8 @@ x0, y0, z0 = [0, 0, 0]
 a, b, c = [1, 1, 1]
 x = x0 + t*a
 y = y0 + t*b
-z = z0 + s*c #3d plane
-#z = z0 + t*c #3d line
+#z = z0 + s*c #3d plane
+z = z0 + t*c #3d line
 
 def plotter(E, A):
     #plt.contour(x, y, z) # points of surface and z=0 plane
