@@ -6,8 +6,8 @@ from matplotlib import cm
 import matplotlib.pyplot as plt
 # Parametrization
 f = lambda x, y: np.sin(x)*np.cos(y)
-t = np.linspace(-0.5*np.pi, 1.5*np.pi, 20)
-s = np.linspace(-0.5*np.pi, 1.5*np.pi, 20)
+t = np.linspace(-0.5*np.pi, 1.5*np.pi, 80)
+s = np.linspace(-0.5*np.pi, 1.5*np.pi, 80)
 x, y = np.meshgrid(t, s)
 z = f(x, y)
 def plotter(E, A):
