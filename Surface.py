@@ -11,15 +11,10 @@ s = np.linspace(-0.5*np.pi, 1.5*np.pi, 80)
 x, y = np.meshgrid(t, s)
 z = f(x, y)
 def plotter(E, A):
-    #plt.contour(x, y, z) # points of surface and z=0 plane
-    plt.contour(x, y, z, 15) # more levels
-    # Axes
+    plt.contour(x, y, z, 15)
     fig = plt.figure('Plot and Contour plot')
     ax = fig.add_subplot(111, projection='3d')
-    #ax = fig.gca(projection='3d')
     h = ax.plot_surface(x, y, z, cmap = cm.plasma, edgecolor = 'k')
-    #cmap = gist_stern, tab20c, PuBuGn, tab20, terrain, gnuplot, viridis, cubehelix, Dark2, flag, 
-    # Accent, hsv | edgecolor = k, p, r, q
     fig.colorbar(h)
     ax.set_xlabel('X', fontweight = 'bold', fontsize = 14)
     ax.set_ylabel('Y', fontweight = 'bold', fontsize = 14)
